@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Assistant:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: Assistant, 'sans serif';
+    font-weight: 300;
+    color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Anton, 'sans serif';
+}
+
+.table-section {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+#table-heading-selection-section {
+    padding: 5px 0;
+    margin-bottom: 25px;
+    background-color: #efefef;
+}
+
+#table-heading-selection-section h5 {
+    padding-left: 15px;
+}
+
+.table-headings, 
+.field-sub-sections, 
+.model-heading-form-section {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.heading-option-wrapper {
+    margin: 0 15px;
+}
+
+#table-headings-metric label::after {
+    content: "cm"
+}
+
+#table-headings-imperial label::after {
+    content: "\0022"
+}
+
+.field-sub-sections {
+    margin: 1px auto;
+    padding: 0px 10px;
+    border: 1px solid #ddd;
+}
+.field-sub-sections h5 {
+    display: block;
+    height: 100%;
+    background-color: grey;
+}
+
+.field-option-wrapper, 
+.heading-option-wrapper, 
+.model-heading-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    margin: 5px 20px;
+}
+
+.form-submit-wrapper {
+    margin: 25px auto;
+}
+
+.form-submit-wrapper input {
+    background-color: green;
+    color: #efefef;
+    padding: 5px 10px;
+}
+
+#output-wrapper {
+    min-height: 45px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.copy-btn-wrapper {
+    margin-top: 25px;
+    position: relative;
+}
+
+.copy-btn-wrapper button {
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 200;
+    background-color: rgb(214, 211, 211);
+}
+
+#helper-text {
+    position: absolute;
+    font-size: 12px;
+    padding: 5px;
+    top: 0;
+    left: 3%;
+    visibility: hidden;
+}
+
+
+
+
