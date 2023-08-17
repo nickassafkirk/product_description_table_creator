@@ -21,19 +21,40 @@
                 <div class="model-heading-form-section">
                     <div class="model-heading-wrapper">
                         <label for="Model_name_1">Add Model Name</label>
-                        <input type="text" name="Model Name" id="Model_name_1">
+                        <input class="optional-model-heading" type="text" name="Model Name 1" id="Model_name_1">
                     </div>
                     <div class="model-heading-wrapper">
-                        <label for="Model_name_1">Add Model Name</label>
-                        <input type="text" name="Model Name" id="Model_name_2">
+                        <label for="Model_name_2">Add Model Name</label>
+                        <input class="optional-model-heading" type="text" name="Model Name 2" id="Model_name_2" disabled="True">
                     </div>
                     <div class="model-heading-wrapper">
-                        <label for="Model_name_1">Add Model Name</label>
-                        <input type="text" name="Model Name" id="Model_name_2">
+                        <label for="Model_name_3">Add Model Name</label>
+                        <input class="optional-model-heading" type="text" name="Model Name 3" id="Model_name_3" disabled="True">
                     </div>
-                </div>
+                    <div class="model-heading-wrapper">
+                        <label for="Model_name_4">Add Model Name</label>
+                        <input class="optional-model-heading" type="text" name="Model Name 4" id="Model_name_4" disabled="True">
+                    </div>
+                    <div class="model-heading-wrapper">
+                        <label for="Model_name_5">Add Model Name</label>
+                        <input class="optional-model-heading" type="text" name="Model Name 5" id="Model_name_5" disabled="True">
+                    </div>
+                    <div class="model-heading-wrapper">
+                        <label for="Model_name_6">Add Model Name</label>
+                        <input class="optional-model-heading" type="text" name="Model Name 6" id="Model_name_6" disabled="True">
+                    </div>
+            </div>
+            <div class="form-presets">
                 <hr>
-
+                <h5>Presets</h5>
+                <select name="presets" id="presets">
+                    <option value="" disabled selected>Choose Brand</option>
+                    <option value="Transition">Transition</option>
+                    <option value="Marin">Marin</option>
+                    <option value="Nukeproof">Nukeproof</option>
+                    <option value="Cannondale">Cannondale</option>
+                </select>
+                <hr>
             </div>
             
             <h5>Frame & Fork</h5>
@@ -42,15 +63,15 @@
                     
                     <div class="field-option-wrapper">
                         <label for="frame">Frame</label>
-                        <input type="checkbox" name="Frame" id="frame">
+                        <input type="checkbox" name="Frame" id="frame" class="transition marin nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="fork">Fork</label>
-                        <input type="checkbox" name="Fork" id="fork">
+                        <input type="checkbox" name="Fork" id="fork" class="transition marin nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="rear_shock">Shock</label>
-                        <input type="checkbox" name="Rear Shock" id="rear_shock">
+                        <input type="checkbox" name="Rear Shock" id="rear_shock" class="transition nukeproof">
                     </div>
                 </div>
                 <h5>Cockpit</h5>
@@ -58,19 +79,19 @@
                     
                     <div class="field-option-wrapper">
                         <label for="headset">Headset</label>
-                        <input type="checkbox" name="Headset" id="headset">
+                        <input type="checkbox" name="Headset" id="headset" class="transition marin nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="stem">Stem</label>
-                        <input type="checkbox" name="Stem" id="stem">
+                        <input type="checkbox" name="Stem" id="stem" class="transition marin nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="handlebars">Handlebars</label>
-                        <input type="checkbox" name="Handlebars" id="handlebars">
+                        <input type="checkbox" name="Handlebars" id="handlebars" class="transition marin nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="grips">Grips</label>
-                        <input type="checkbox" name="Grips" id="grips">
+                        <input type="checkbox" name="Grips" id="grips" class="transition marin nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="bartape">Bartape</label>
@@ -86,43 +107,43 @@
                     </div>
                     <div class="field-option-wrapper">
                         <label for="front_wheel">Front Wheel</label>
-                        <input type="checkbox" name="Front Wheel" id="front_wheel">
+                        <input type="checkbox" name="Front Wheel" id="front_wheel" class="nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="rear_wheel">Rear Wheel</label>
-                        <input type="checkbox" name="Rear Wheel" id="rear_wheel">
+                        <input type="checkbox" name="Rear Wheel" id="rear_wheel" class="nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="rims">Rims</label>
-                        <input type="checkbox" name="Rims" id="rims">
+                        <input type="checkbox" name="Rims" id="rims" class="transition marin">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="spokes">Spokes</label>
-                        <input type="checkbox" name="Spokes" id="spokes">
+                        <input type="checkbox" name="Spokes" id="spokes" class="transition marin">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="hubs">Hubs</label>
-                        <input type="checkbox" name="Hubs" id="hubs">
+                        <input type="checkbox" name="Hubs" id="hubs" class="transition">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="front_hub">Front Hub</label>
-                        <input type="checkbox" name="Front Hub" id="front_hub">
+                        <input type="checkbox" name="Front Hub" id="front_hub marin">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="rear_hub">Rear Hub</label>
-                        <input type="checkbox" name="Rear Hub" id="rear_hub">
+                        <input type="checkbox" name="Rear Hub" id="rear_hub marin">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="tyres">Tyres</label>
-                        <input type="checkbox" name="Tyres" id="tyres">
+                        <input type="checkbox" name="Tyres" id="tyres" class="marin nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="front_tyre">Front Tyre</label>
-                        <input type="checkbox" name="Front Tyre" id="front_tyre">
+                        <input type="checkbox" name="Front Tyre" id="front_tyre" class="transition">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="rear_tyre">Rear Tyre</label>
-                        <input type="checkbox" name="Rear Tyre" id="rear_tyre">
+                        <input type="checkbox" name="Rear Tyre" id="rear_tyre" class="transition">
                     </div>
                 </div>
                 <h5>Drivetrain</h5>
@@ -130,7 +151,7 @@
                     
                     <div class="field-option-wrapper">
                         <label for="shifter">Shifter</label>
-                        <input type="checkbox" name="Shifter" id="Shifter">
+                        <input type="checkbox" name="Shifter" id="Shifter" class="transition marin nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="front_shifter">Front Shifter</label>
@@ -142,15 +163,15 @@
                     </div>
                     <div class="field-option-wrapper">
                         <label for="rear_derailleur">Rear Derailleur</label>
-                        <input type="checkbox" name="Rear Derailleur" id="rear_derailleur">
+                        <input type="checkbox" name="Rear Derailleur" id="rear_derailleur" class="transition marin nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="front_derailleur">Front Derailleur</label>
-                        <input type="checkbox" name="Front Derailleur" id="front_derailleur">
+                        <input type="checkbox" name="Front Derailleur" id="front_derailleur marin">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="crankset">Crankset</label>
-                        <input type="checkbox" name="Crankset" id="crankset">
+                        <input type="checkbox" name="Crankset" id="crankset" class="transition marin nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="chainring">Chainring</label>
@@ -158,15 +179,19 @@
                     </div>
                     <div class="field-option-wrapper">
                         <label for="cassette">Cassette</label>
-                        <input type="checkbox" name="Cassette" id="cassette">
+                        <input type="checkbox" name="Cassette" id="cassette" class="transition marin nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="chain">Chain</label>
-                        <input type="checkbox" name="Chain" id="chain">
+                        <input type="checkbox" name="Chain" id="chain" class="transition marin nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="bottom_bracket">Bottom Bracket</label>
-                        <input type="checkbox" name="Bottom Bracket" id="bottom_bracket">
+                        <input type="checkbox" name="Bottom Bracket" id="bottom_bracket" class="marin">
+                    </div>
+                    <div class="field-option-wrapper">
+                        <label for="chainguide">Chainguide</label>
+                        <input type="checkbox" name="chainguide" id="chainguide" class="transition nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="powermeter">Powermeter</label>
@@ -178,31 +203,31 @@
                     
                     <div class="field-option-wrapper">
                         <label for="brakes">Brakes</label>
-                        <input type="checkbox" name="Brakes" id="brakes">
+                        <input type="checkbox" name="Brakes" id="brakes" class="transition nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="front_brake">Front Brake</label>
-                        <input type="checkbox" name="Front Brake" id="front_brake">
+                        <input type="checkbox" name="Front Brake" id="front_brake" class="marin">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="rear_brake">Rear Brake</label>
-                        <input type="checkbox" name="Rear Brake" id="rear_brake">
+                        <input type="checkbox" name="Rear Brake" id="rear_brake" class="marin">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="brake_levers">Brake Levers</label>
-                        <input type="checkbox" name="Brake Levers" id="brake_levers">
+                        <input type="checkbox" name="Brake Levers" id="brake_levers" class="marin">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="rotors">Rotors</label>
-                        <input type="checkbox" name="Rotors" id="rotors">
+                        <input type="checkbox" name="Rotors" id="rotors" class="transition">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="rotor_front">Brake Rotor (Front)</label>
-                        <input type="checkbox" name="Brake Rotor (Front)" id="rotor_front">
+                        <input type="checkbox" name="Brake Rotor (Front)" id="rotor_front" class="nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="rotor_rear">Brake Rotor (Rear)</label>
-                        <input type="checkbox" name="Brake Rotor (Rear)" id="rotor_rear">
+                        <input type="checkbox" name="Brake Rotor (Rear)" id="rotor_rear" class="nukeproof">
                     </div>
                 </div>
                 <h5>Seating</h5>
@@ -210,27 +235,26 @@
                     
                     <div class="field-option-wrapper">
                         <label for="seatpost">Seatpost</label>
-                        <input type="checkbox" name="Seatpost" id="seatpost">
+                        <input type="checkbox" name="Seatpost" id="seatpost" class="transition marin nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="saddle">Saddle</label>
-                        <input type="checkbox" name="Saddle" id="saddle">
+                        <input type="checkbox" name="Saddle" id="saddle" class="transition marin nukeproof">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="seatclamp">Seatclamp</label>
                         <input type="checkbox" name="Seatclamp" id="seatclamp">
                     </div>
-                    <div class="field-option-wrapper">
-                        <label for="pedals">Pedals</label>
-                        <input type="checkbox" name="Pedals" id="pedals">
-                    </div>
                 </div>
                 <h5>Extras</h5>
                 <div class="field-sub-sections">
-                    
+                    <div class="field-option-wrapper">
+                        <label for="pedals">Pedals</label>
+                        <input type="checkbox" name="Pedals" id="pedals" class="marin">
+                    </div>
                     <div class="field-option-wrapper">
                         <label for="extras">Extras</label>
-                        <input type="checkbox" name="Extras" id="extras">
+                        <input type="checkbox" name="Extras" id="extras" class="transition marin">
                     </div>
                     <div class="field-option-wrapper">
                         <label for="mudguards">Mudguards</label>
@@ -251,6 +275,10 @@
                     <div class="field-option-wrapper">
                         <label for="kickstand">Kickstand</label>
                         <input type="checkbox" name="Kickstand" id="kickstand">
+                    </div>
+                    <div class="field-option-wrapper">
+                        <label for="weight">Weight</label>
+                        <input type="checkbox" name="weight" id="weight" class="transition nukeproof">
                     </div>
                 </div>
                 <h5>Electric Bike</h5>
@@ -278,10 +306,13 @@
             
         </div>
         <div class="copy-btn-wrapper">
-            <button id="copy-to-clipboard">
+            <span id="copy-to-clipboard">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M384 336H192c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16l140.1 0L400 115.9V320c0 8.8-7.2 16-16 16zM192 384H384c35.3 0 64-28.7 64-64V115.9c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1H192c-35.3 0-64 28.7-64 64V320c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H256c35.3 0 64-28.7 64-64V416H272v32c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192c0-8.8 7.2-16 16-16H96V128H64z"/></svg>
-            </button>
+            </span>
             <span id="helper-text">Copy</span>
+        </div>
+        <div>
+            <p id="reset-form">clear selection</p>
         </div>
         
     </div>
